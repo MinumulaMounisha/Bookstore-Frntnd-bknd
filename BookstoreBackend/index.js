@@ -46,6 +46,10 @@ app.use('/api', routes);
 app.use('/api/register',authRoute);
 
 
+app.get("/", (req, res) => {
+    res.send("Express on Vercel");
+  });
+
 app.listen(3000, () => {
     console.log(`Server Started at ${3000}`)
 })
