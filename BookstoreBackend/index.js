@@ -47,7 +47,8 @@ app.use('/api/register',authRoute);
 
 
 app.get("/", (req, res) => {
-    res.send("Express on Vercel");
+   // res.send("Express on Vercel");
+    res.json({ message: "Server is running" });
   });
 
 app.listen(3000, () => {
