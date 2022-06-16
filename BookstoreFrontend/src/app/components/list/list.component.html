@@ -1,0 +1,37 @@
+<app-navbar></app-navbar>
+<br>
+<div class="list row">
+    <div class="col-md-8">
+      <div class="input-group mb-4">
+        <input type="text" class="form-control" placeholder="Search by title" [(ngModel)]="searchTitle" />
+      </div>
+    </div>
+    <div class="col-md-12">
+      <h4>Book List</h4>
+  
+      <table class="table d-md-table" width="100%">
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+            <th scope="col" style="min-width: 150px;">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let book of books |  filter: searchTitle">
+            <th scope="row">{{book._id}}</th>
+            <td><b>{{book.title}}</b></td>
+            <td>{{book.description}}</td>
+            <td>{{book.price}}</td>
+            <td class="Actions">
+              <button type="button" class="btn btn-danger d-flex rounded border-0 me-2" routerLink="/book/{{book._id}}">Edit</button>
+              <button type="button" class="btn btn-warning d-flex rounded border-0 me-2" (click)="deleteBook(book._id)">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  
+    </div>
+</div>

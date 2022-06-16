@@ -1,0 +1,16 @@
+.navbar-brand.abs{
+    font-size: xx-large;
+    font-weight: 500;
+  }
+  .nav-link{
+    font-size: medium !important;
+    font-weight: 400;
+    color: black !important;
+  }
+  .nav-link .fa{
+    opacity: 60%;
+  }
+  .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  

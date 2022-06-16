@@ -1,0 +1,19 @@
+
+
+td{
+    text-align: center;
+    word-wrap: break-word;
+}
+thead{
+    border-color: inherit;
+    border: none !important;
+}
+th{    
+    padding-top: 12px;
+    font-size: large;
+    font-weight:580;
+    text-align: center;
+}
+.Actions{
+    display: flex;
+}

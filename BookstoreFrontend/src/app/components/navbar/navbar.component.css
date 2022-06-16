@@ -1,0 +1,12 @@
+.logout{
+    margin-top: 1rem;
+    color: red;
+    vertical-align: middle;
+    
+}
+a{text-decoration: none !important;}
+
+.navbar-brand{
+    font-size: x-large;
+    font-weight: 600;
+}
